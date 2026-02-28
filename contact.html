@@ -9,13 +9,19 @@
 <body>
     <nav>
         <label for="name">Name</label>
-        <input type="text" placeholder=""required><br>
+        <input type="text" placeholder="Enter your name"required><br>
         <label for="country">Country</label>
-        <input type="text" placeholder=""required><br>
+        <input type="text" placeholder="Enter our country"required><br>
         <label for="region">Region</label>
         <input type="text" placeholder=""required><br>
         <label for="county">County</label>
-        <input type="text" placeholder=""required><br>
+        <select>
+            <option value=""></option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="somalia">Somalia</option>
+        </select><br>
         <label for="occupation">Occupation</label>
         <input type="text" placeholder=""required><br>
         <label for="year">Year</label>
@@ -35,11 +41,13 @@
         <div class="conatainer">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="" alt="">
+                    <img src="images\1000000784-removebg-preview.png" alt="">
                 </div>
                 <div class="about-col-2">
                     <h2 class="sub-title">About us</h2>
-                    <p>I'm Derick Watako from nairobi,on behalf of our <br> web development team,am here to present what we offer. <br>These are what we offer;
+                    <p>I'm Derick Watako from nairobi,on behalf of our <br> 
+                        web development team,am here to present what we offer. 
+                        <br>These are what we offer;
                         <nav>
                             <ol>
                                 <li>
@@ -93,46 +101,11 @@
             </div>
         </div>
     </div>
-    <button>Submit</button>
-</div>
-<script>
-    var tablinks=Document.GetElementByClassName("tab-link")
-    var tabcontents=Document.GetElementByClassName("tab-content")
-    <script>
+    <div id="hello"></div>
+    <button id="submit" onclick="handclick ()">Submit</button>
+ </div>
 
-        var  sidemenu=document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right ="0"
-        }
-        function closemenu(){
-            sidemenu.style.right ="-200px"
-        }
-    </script>
-    <script>
-        const scriptURL= '<SCRIPT URL>'
-        const form= document.forms['submit-to-google-sheet']
-        form.addEventListener('submit',e=> {
-            e.preventDefault()
-            fetch(scriptURL,{method:'post',body:new FormData(form)})
-                .then(response=>console.log('success!', response))
-                .catch(error=>console.error('Error!',error.message))
-        })
-    </script>
-    <script>
-        const script URL=''111
-        const form=Document.forms[ submit-to-google-sheet]
-        const msg=document.getElementById("msg")
-        
-    </script>
-    <script>
-        const myArray=0,1,2
-        .then (responce=>console.log('Array',response)) 
-        </script>
-        <script>
-            const time=1,3,6
-            .then (response=console.play('time',response))
-            </script> 
+            <script src="script.js"></script>
 </body>
 
 </html>

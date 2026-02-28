@@ -13,7 +13,7 @@ body {
 }
 #header {
     width:50%;
-    height: 90vh;
+    height: 150%;
     background-image: URL("Images\1763625589275-removebg-preview (2).png");
     background-size: cover;
     background-position: center;
@@ -207,11 +207,13 @@ about-col-2 {
 }
 
 .work img {
-    width: 30%;
+    width: 10%;
     height: 5%;
     border-radius: 10px;
-    display: block;
+    display: flex;
     transition: tranform 0.7s;
+    
+    
 }
 .layer {
     width:100% ;
@@ -264,8 +266,11 @@ about-col-2 {
     color: #fff;
     transition: background;
 }
+.class .btn{
+    color: #61b752;
+}
 .btn :hover {
-    background: #ff004f;
+    background: #00ff4c;
 }
 
 /*----------contact---------*/
@@ -339,7 +344,7 @@ nav.fas {
 }
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(Images/Derick.png);
+        background-image: url(images\1000000784-removebg-preview.png);
     }
     .header-text {
         margin-top: 100%;
@@ -405,4 +410,11 @@ nav.fas {
     align-items: center;
     display: block;
     justify-content:first baseline;
+}
+.nav img {
+    background-position: center;
+    background-repeat: repeat;
+}
+.work {
+    height: 10%;
 }

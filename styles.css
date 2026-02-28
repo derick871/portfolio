@@ -43,3 +43,8 @@
     display: flex;
     justify-content: space-between;
 }
+.div{
+    color: blueviolet;
+    font-family: sans-serif;
+    font-size: medium;
+}

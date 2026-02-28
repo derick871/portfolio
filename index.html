@@ -29,13 +29,14 @@
             </div>
         </div>
     </div>
+
     <!-----------about-------->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
 
-                        <img src="Images\1763625589275-removebg-preview (2).png">
+                        <img src="images\1000000784-removebg-preview.png" alt="image"width="80%",height="110%">
                 </div>
                 <div class="about-col-2">
                       <h1 class="sub-title">About Me</h1>
@@ -46,18 +47,27 @@
                     </p>
                 </div>
                 <div class="tab-title">
-                    <p class="tab-links active link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links"onclick=opentab('Experience')>Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links active link" onclick="opentab('skills')">Skills</p><hr>
+                    <p class="tab-links"onclick=opentab('Experience')>Experience</p><hr>
+                    <p class="tab-links" onclick="opentab('education')">Education</p><hr>
                 </div>
                 <div class="tab contents active-tab" id="skills">
+                    <h2>skills</h2>
                     <ul>
-                        <li> <span>UI?UX </span><br> Football at mbajo primary</li>
-                        <li><span>music</span><br>Music festival</li>
-                        <li><span>design</span><br>Building up a statue</li>
+                        <li> <span>
+                            2013-2014 UI?UX 
+                        </span><br> Football at mbajo primary
+                    </li>
+                        <li><span>
+                           2012-2013 music
+                        </span><br>Music festival</li>
+                        <li><span>
+                            2010-2011design
+                        </span><br>Building up a statue</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
+                    <h2>Experience</h2>
                     <ul>
                         <li>
                             <span>
@@ -80,6 +90,7 @@
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
+                    <h2>Education</h2>
                     <ul>
                         <li>
                             <span>2016</span><br>UI/UX great footballer mbajo primary</li>
@@ -106,7 +117,7 @@
               
                   <i class="fa-solid fa-code-simple"></i>
                   <h2>UI/UX Design</h2>
-                  <p>Derick demarco doktor alt comet <br>connection
+                  <p>Derick demarco doctor alt comet <br>connection
                      adplacing.A kenyan citizen <br>black in race.
                   </p>
                   <a href="#">Learn more</a>
@@ -127,18 +138,16 @@
         <h1 class="sub-title">My work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="Images\Images\Screenshot_20251130-085005.jpg">
-            <div class="work">
-                <img src="Images\Images\Screenshot_20251130-085046.jpg">
-            <div class="work">
-                <img src="Images\Images\Screenshot_20251130-085123.jpg">
+                <img src="images\1000000784-removebg-preview.png" alt="image" width="30%",height="5%">
+                <img src="images\1000000784-removebg-preview.png"alt="image"width= "30%",height="5%">
+                <img src="images\1000000784-removebg-preview.png"alt="image"width="30%",height="5%">
                 <div class="layer">
                     <h3>social media App</h3>
                     <p>The app connects you to the talented people around the world.
                         Download it from play store</p>
                         <a href="#">download link</a>
             <div class="work">
-                <img src="">
+                <img src="images\1000000784-removebg-preview.png"alt="image"width="35%",height="10%">
                 <div class="layer">
                     <h3>Music App</h3>
                     <p>The app connects you to the talented people around the world.
@@ -180,9 +189,11 @@
                 <form>
                     <input type="text" name="Name" placeholder="Your Name " required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">submit</button>
+                    <textarea name="Message"  rows="3" placeholder="Your Message"></textarea>
                 </form>
+            </div>
+            <div id="example">
+                <button id="submit" onclick="handleClick()">Submit</button>
             </div>
         </div>
     </div>
@@ -190,40 +201,8 @@
 <div class="copyright">
     <p>copyright Derick. Made with <i class="fas fa-heart"></i> Easy Tutorials</p>
 </div>
-    <script>
-
-var tablinks=document.getElementsByClassName("tab-links");
-var tabcontents=document.getElementsByClassName("tab-contents");
-
-function opentab (tabname){
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add(active-tab);
-    }
-
-    </script>
-    <script>
-
-        var sidemenu=document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right ="0"
-        }
-        function closemenu(){
-            sidemenu.style.right ="-200px"
-        }
-    </script>
-    <script>
-        const scriptURL= '<SCRIPT URL>'
-        const form= document.forms['submit-to-google-sheet']
-        form.addEventListener('submit',e=> {
-            e.preventDefault()
-            fetch(scriptURL,{method:'post',body:new FormData(form)})
-                .then(response=>console.log('success!', response))
-                .catch(error=>console.error('Error!',error.message))
-        })
-    </script>
+<script src="script.js"></script>
+   
+    
 </body>
 </html>
