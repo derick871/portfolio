@@ -208,7 +208,7 @@ about-col-2 {
 
 .work img {
     width: 30%;
-    height: 5%;
+    height: 10%;
     border-radius: 10px;
     display: flex;
     transition: tranform 0.7s;
